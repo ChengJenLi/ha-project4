@@ -1,5 +1,10 @@
 basic.showIcon(IconNames.Skull)
 serial.redirectToUSB()
 basic.forever(function () {
-    serial.writeValue("數位信號", pins.digitalReadPin(DigitalPin.P15))
+    pins.digitalWritePin(DigitalPin.P16, pins.digitalReadPin(DigitalPin.P15))
+    if (pins.digitalReadPin(DigitalPin.P15) == 1) {
+        basic.showIcon(IconNames.Square)
+    } else {
+        basic.showIcon(IconNames.Diamond)
+    }
 })

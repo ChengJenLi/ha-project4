@@ -1,5 +1,5 @@
 {
-    "name": "HA-Project4",
+    "name": "HA-Project45",
     "description": "",
     "dependencies": {
         "core": "*",
@@ -20,5 +20,6 @@
     },
     "supportedTargets": [
         "microbit"
-    ]
+    ],
+    "preferredEditor": "blocksprj"
 }
